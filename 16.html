@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:100,300,400,600" rel="stylesheet" type="text/css">
+        <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
+        <link type="text/css" rel="stylesheet" href="style.css">
+        <title>Budgety</title>
+    </head>
+    <body>
+        
+  
+                                                                                                                                                                                        
+            
+            <div class="container clearfix">
+              <h1>Τσάμης, Δημήτρης Γ. Άνθρωπος και Περιβάλλον στη σκέψη των Τριών Ιεραρχών</h1>
+                    <div id="book">
+                    
+                </div>
+
+                <script type="text/javascript">
+                    let url,j,img,id;
+                    img= '';
+                    url = 'http://www.imdlibrary.gr/images/Books/Tsami_D_Anthropos_kai_Perivallon_sti_skepsi_ton_Trion_Ierarxon_Thes-ki_1977/';
+                 
+                    for (var i = 1; i < 23; i++) {
+                        
+                        if ( i < 10 ) {
+                            j= '00'+i;
+                        }else if( i<100) {
+                             j= '0'+i;
+                        }else {
+                            j = i;
+                        }
+                       img += '<a id="img'+j+'" href="'+ url + j + '.jpg' +'" download>'+ i +'</a> ';
+                      
+                    }
+
+                    document.getElementById("book").innerHTML= img;
+
+                    // for (var i = 120; i < 137; i++) {
+                    //     id = 'img'+i;
+                    //     document.getElementById(id).click();
+                    // }
+                    
+
+                </script>
+        
+                
+                
+                
+       
+            </div>
+            
+            
+        </div>
+        
+        <!-- <script src="app.js"></script> -->
+    </body>
+</html>
